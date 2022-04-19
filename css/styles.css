@@ -1,0 +1,22 @@
+.warning {
+    border: 10px ridge #f00;
+    background-color: #ff0;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.warning img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.warning p {
+    font: small-caps bold 1.2rem sans-serif;
+    text-align: center;
+}
