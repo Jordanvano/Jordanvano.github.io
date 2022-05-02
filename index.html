@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan</title>
+
+<!--CSS for small icon next to website name><-->
+
     <link rel="icon" href="Images/favicon-2.ico">
+
+<!--CSS for colours, alignment and paragraph><-->
+
     <style>
     body {background-color: grey;}
     h1 {text-align: center;}
@@ -17,6 +23,9 @@
     .p2 {padding: 30px}
     .p3 {margin: 50px;}
     </style>
+
+<!--CSS for Links><-->
+
     <style>
         a:link {
           color: blue;
@@ -47,19 +56,28 @@
             background-size: cover;
           }
           </style>-->
+          
+<!--CSS for table><-->
+
           <style>
             table {
               font-family: arial, sans-serif;
-              border-collapse: collapse;
+              border:4px solid black;
+              border-radius: 10px;
+              border-style: dotted;
+              border-spacing: 10px;
               width: 100%;
             }
             
             td, th {
-              border: 1px solid #dddddd;
-              text-align: left;
-              padding: 8px;
+              border: 4px solid #000000;
+              border-radius: 10px;
+              padding-top: 15px;
+              padding-bottom: 5px;
+              padding-left: 20px;
+              padding-right: 25px;
             }
-            
+          
             tr:nth-child(even){
               background-color: #dddddd;
             }
@@ -72,7 +90,12 @@
             tr:nth-child(odd){
               background-color: green;
             }
+
+            tr:hover {background-color: #ffea00;}
             </style>
+
+<!--Line of code that links the external css sheet to my HTML for table><-->
+
           <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -163,40 +186,58 @@
       <img src="Images/LOGO 17.png">
     </picture>
     <table>
-      <tr>
-        <th>Company</th>
+      <colgroup>
+        <!-- The below function is used to hide columns, doesn't work on Safari-->
+        <!--<col span="1">
+        <col span="2" style="visibility: collapse">
+      </colgroup>-->
+      <caption>Useful data</caption>
+      <tr style="height:100px">
+        <th>City</th>
+        <th style="width:30%">Company</th>
         <th>Contact</th>
-        <th>Country</th>
+        <th colspan="2">Country</th>
       </tr>
       <tr>
+        <th>Toronto</th>
         <td>Alfreds Futterkiste</td>
         <td>Maria Anders</td>
         <td>Germany</td>
+        <td>Lithuania</td>
       </tr>
       <tr>
+        <th>New York</th>
         <td>Centro comercial Moctezuma</td>
         <td>Francisco Chang</td>
         <td>Mexico</td>
+        <td>India</td>
       </tr>
       <tr>
+        <th>Vancouver</th>
         <td>Ernst Handel</td>
         <td>Roland Mendel</td>
         <td>Austria</td>
+        <td>China</td>
       </tr>
       <tr>
+        <th>Las Vegas</th>
         <td>Island Trading</td>
         <td>Helen Bennett</td>
         <td>UK</td>
+        <td>Japan</td>
       </tr>
       <tr>
+        <th rowspan="2">Seattle</th>
         <td>Laughing Bacchus Winecellars</td>
         <td>Yoshi Tannamuri</td>
         <td>Canada</td>
+        <td>Germany</td>USA
       </tr>
       <tr>
         <td>Magazzini Alimentari Riuniti</td>
         <td>Giovanni Rovelli</td>
         <td>Italy</td>
+        <td>USA</td>
       </tr>
     </table>
 </body>
