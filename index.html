@@ -97,6 +97,35 @@
 <!--Line of code that links the external css sheet to my HTML for table><-->
 
           <link rel="stylesheet" href="css/styles.css">
+
+
+<!-- Horizontal List with CSS to create a navigation menu-->
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    background-color: #307485;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+  </style>
+
 </head>
 <body>
      <h1 style="background-color:rgba(71, 166, 255, 0.753);">Welcome to my Website</h1>
@@ -241,21 +270,22 @@
       </tr>
     </table>
 
-<h3>An unordered HTML list</h3>
+<h3>Navigation Menu</h3>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
 
 <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li><a href="https://www.google.com"target="_blank">Homepage</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#support">Support</a></li>
+  <li><a href="#help">Help</a></li>
+  <li><a href="#location">Location</a></li>
+  <li><a href="#where to find us">Where to find us?</a></li>
+  <li><a href="#where to apply">Where to apply?</a></li>
+  <li><a href="#give us some feedback">Give us some feedback</a></li>
+  <li><a href="#TBD">Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth.</a></li>
 </ul>
-
-<h4>An ordered HTML list</h4>
-
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>  
 
 
 </body>
