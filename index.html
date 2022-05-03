@@ -307,6 +307,35 @@
   Your browser does not support the video tag.
 </video>
 
+<h4>Display a Search Field</h4>
+
+<form action="https://www.google.com" target="_blank">
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit">
+</form>
+<br>
+<br>
+<form id="form" role="search">
+  <input type="search" id="query" name="q"
+   placeholder="Search..."
+   aria-label="Search through site content">
+  <button>Search</button>
+</form>
+const f = document.getElementById('form');
+const q = document.getElementById('query');
+const google = 'https://www.google.com/search?q=site%3A+';
+const site = 'pagedart.com';
+
+function submitted(event) {
+  event.preventDefault();
+  const url = google + site + '+' + q.value;
+  const win = window.open(url, '_blank');
+  win.focus();
+}
+
+f.addEventListener('submit', submitted);
+
 
 </body>
 </html>
