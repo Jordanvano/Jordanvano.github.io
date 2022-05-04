@@ -7,22 +7,22 @@
 
 <!--CSS for small icon next to website name><-->
 
-    <link rel="icon" href="Images/favicon-2.ico">
+      <link rel="icon" href="Images/favicon-2.ico">
 
 <!--CSS for colours, alignment and paragraph><-->
 
-    <style>
-    body {background-color: grey;}
-    h1 {text-align: center;}
-    p {text-align: center;
-       color: black;
-       font-family: verdana;
-       font-size: 120%;
-      }
-    bdo {border: 2px solid powderblue;}
-    .p2 {padding: 30px}
-    .p3 {margin: 50px;}
-    </style>
+        <style>
+        body {background-color: grey;}
+        h1 {text-align: center;}
+        p {text-align: center;
+          color: black;
+          font-family: verdana;
+          font-size: 120%;
+          }
+        bdo {border: 2px solid powderblue;}
+        .p2 {padding: 30px}
+        .p3 {margin: 50px;}
+        </style>
 
 <!--CSS for Links><-->
 
@@ -48,6 +48,7 @@
           text-decoration: underline;
         }
         </style>
+
         <!--<style>
           body {
             background-image: url('Images/Mountains.jpg');
@@ -56,75 +57,128 @@
             background-size: cover;
           }
           </style>-->
-          
-<!--CSS for table><-->
 
-          <style>
-            table {
-              font-family: arial, sans-serif;
-              border:4px solid black;
-              border-radius: 10px;
-              border-style: dotted;
-              border-spacing: 10px;
-              width: 100%;
-            }
-            
-            td, th {
-              border: 4px solid #000000;
-              border-radius: 10px;
-              padding-top: 15px;
-              padding-bottom: 5px;
-              padding-left: 20px;
-              padding-right: 25px;
-            }
-          
-            tr:nth-child(even){
-              background-color: #dddddd;
-            }
-            th:nth-child(odd) {
-              background-color: blue;
-            }
-            td:nth-child(3) {
-              background-color: red;
-            }
-            tr:nth-child(odd){
-              background-color: green;
-            }
-
-            tr:hover {background-color: #ffea00;}
-            </style>
 
 <!--Line of code that links the external css sheet to my HTML for table><-->
 
-          <link rel="stylesheet" href="css/styles.css">
+          <link rel="stylesheet" href="css/styles.css"> 
+          
+          
+<!--CSS for table><-->
 
-
-<!-- Horizontal List with CSS to create a navigation menu-->
 <style>
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: scroll;
-    background-color: #307485;
+  .p4 table {
+    font-family: arial, sans-serif;
+    border:4px solid black;
+    border-radius: 10px;
+    border-style: dotted;
+    border-spacing: 10px;
+    width: 100%;
   }
   
-  li {
-    float: left;
+  .p4 td, th {
+    border: 4px solid #000000;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 25px;
   }
-  
-  li a {
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
+
+  .p4 tr:nth-child(even){
+    background-color: #dddddd;
   }
-  
-  li a:hover {
-    background-color: #111111;
+  .p4 th:nth-child(odd) {
+    background-color: blue;
   }
+  .p4 td:nth-child(3) {
+    background-color: red;
+  }
+  .p4 tr:nth-child(odd){
+    background-color: green;
+  }
+
+  .p4 tr:hover {background-color: #ffea00;}
   </style>
+
+
+<!-- CSS for Horizontal List to create a navigation menu-->
+
+<style>
+.p5 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  background-color: #307485;
+}
+
+.p5 li {
+  float: left;
+}
+
+.p5 li a {
+  display: block;
+  color: rgb(0, 145, 255);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.p5 li a:hover {
+  background-color: #111111;
+}
+</style>
+<!-- CSS for the google search bar-->
+
+<!--
+<style>
+  body {
+  background-color: #3745c2;
+  margin: 200px 40%;
+}
+-->
+<style>
+.p6 form {
+  background-color: #4654e1;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.p6 input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+.p6 ::placeholder {
+  color: #fff;
+  opacity: 0.7; 
+}
+
+.p6 svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+.p6 button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+</style>
 
 </head>
 <body>
@@ -214,78 +268,85 @@
       <source media="(min-width: 465px)" srcset="Images/unnamed.jpg">
       <img src="Images/LOGO 17.png">
     </picture>
-    <table>
-      <colgroup>
-        <!-- The below function is used to hide columns, doesn't work on Safari-->
-        <!--<col span="1">
-        <col span="2" style="visibility: collapse">
-      </colgroup>-->
-      <caption>Useful data</caption>
-      <tr style="height:100px">
-        <th>City</th>
-        <th style="width:30%">Company</th>
-        <th>Contact</th>
-        <th colspan="2">Country</th>
-      </tr>
-      <tr>
-        <th>Toronto</th>
-        <td>Alfreds Futterkiste</td>
-        <td>Maria Anders</td>
-        <td>Germany</td>
-        <td>Lithuania</td>
-      </tr>
-      <tr>
-        <th>New York</th>
-        <td>Centro comercial Moctezuma</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-        <td>India</td>
-      </tr>
-      <tr>
-        <th>Vancouver</th>
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
-        <td>China</td>
-      </tr>
-      <tr>
-        <th>Las Vegas</th>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
-        <td>Japan</td>
-      </tr>
-      <tr>
-        <th rowspan="2">Seattle</th>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
-        <td>Germany</td>USA
-      </tr>
-      <tr>
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-        <td>Italy</td>
-        <td>USA</td>
-      </tr>
-    </table>
+    
+<div class="p4">
+                <table>
+                  <colgroup>
+                    <!-- The below function is used to hide columns, doesn't work on Safari-->
+                    <!--<col span="1">
+                    <col span="2" style="visibility: collapse">
+                  </colgroup>-->
+                  <caption>Useful data</caption>
+                  <tr style="height:100px">
+                    <th>City</th>
+                    <th style="width:30%">Company</th>
+                    <th>Contact</th>
+                    <th colspan="2">Country</th>
+                  </tr>
+                  <tr>
+                    <th>Toronto</th>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    <td>Lithuania</td>
+                  </tr>
+                  <tr>
+                    <th>New York</th>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                    <td>India</td>
+                  </tr>
+                  <tr>
+                    <th>Vancouver</th>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                    <td>China</td>
+                  </tr>
+                  <tr>
+                    <th>Las Vegas</th>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                    <td>Japan</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="2">Seattle</th>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                    <td>Germany</td>USA
+                  </tr>
+                  <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                    <td>USA</td>
+                  </tr>
+                </table>
+</div>
+
 
 <h3>Navigation Menu</h3>
 <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
 
-<ul>
-  <li><a href="https://www.google.com"target="_blank">Homepage</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#support">Support</a></li>
-  <li><a href="#help">Help</a></li>
-  <li><a href="#location">Location</a></li>
-  <li><a href="#where to find us">Where to find us?</a></li>
-  <li><a href="#where to apply">Where to apply?</a></li>
-  <li><a href="#give us some feedback">Give us some feedback</a></li>
-  <li><a href="#TBD">Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth.</a></li>
-</ul>
+<div class="p5">
+                <ul>
+                  <li><a href="https://www.google.com"target="_blank">Homepage</a></li>
+                  <li><a href="#news">News</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#support">Support</a></li>
+                  <li><a href="#help">Help</a></li>
+                  <li><a href="#location">Location</a></li>
+                  <li><a href="#where to find us">Where to find us?</a></li>
+                  <li><a href="#where to apply">Where to apply?</a></li>
+                  <li><a href="#give us some feedback">Give us some feedback</a></li>
+                  <li><a href="#TBD">Michaelmas term lately over, and the Lord Chancellor sitting in Lincoln's Inn Hall. Implacable November weather. As much mud in the streets as if the waters had but newly retired from the face of the earth.</a></li>
+                </ul>
+</div>
+
 
 <form action="/action_page.php">
   <fieldset>
@@ -308,34 +369,37 @@
 </video>
 
 <h4>Display a Search Field</h4>
-
-<form action="https://www.google.com" target="_blank">
+<!--<form id="form" role="search">
   <label for="gsearch">Search Google:</label>
-  <input type="search" id="gsearch" name="gsearch">
-  <input type="submit">
-</form>
-<br>
-<br>
-<form id="form" role="search">
   <input type="search" id="query" name="q"
    placeholder="Search..."
    aria-label="Search through site content">
   <button>Search</button>
-</form>
-const f = document.getElementById('form');
-const q = document.getElementById('query');
-const google = 'https://www.google.com/search?q=site%3A+';
-const site = 'pagedart.com';
-
-function submitted(event) {
-  event.preventDefault();
-  const url = google + site + '+' + q.value;
-  const win = window.open(url, '_blank');
-  win.focus();
-}
-
-f.addEventListener('submit', submitted);
+</form>-->
+<div class="p6">
+                <form role="search" id="form">
+                  <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+                  <button>
+                    <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+                  </button>
+                </form>
 
 
+                <!--What is in between the script elements is JAVA-->
+                <script>
+                const f = document.getElementById('form');
+                const q = document.getElementById('query');
+                const google = 'https://www.google.com/search?q=';
+
+                function submitted(event) {
+                  event.preventDefault();
+                  const url = google + '+' + q.value;
+                  const win = window.open(url, '_blank');
+                  win.focus();
+                }
+
+                f.addEventListener('submit', submitted);
+                </script>
+</div>
 </body>
 </html>
