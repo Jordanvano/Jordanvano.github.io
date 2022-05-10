@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60">
+    <meta name="author" content="Jordan Van ooteghem">
     <title>Jordan</title>
 
 <!--CSS for small icon next to website name><-->
@@ -494,5 +496,82 @@ function myFunction() {
   }
 }
 </script>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+<h2>Iframe - Target for a Link</h2>
+
+<iframe src="Images/pexels-craig-adderley-1563355.jpg" style="border:none;" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="https://jordanvano.github.io/" target="iframe_a">My website</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+<h1>The iframe src attribute</h1>
+
+<iframe src="Images/pexels-pixabay-65894.jpg">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+<h1>My Second JavaScript</h1>
+
+<p id="demo 1">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo 1").style.fontSize = "25px"; 
+  document.getElementById("demo 1").style.color = "red";
+  document.getElementById("demo 1").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+
+<h1>My Third JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Images/pic_bulboff.gif"
+  } else {
+    pic = "Images/pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="Images/pic_bulboff.gif" width="100" height="180" class="center1">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+
+
+
 </body>
 </html>

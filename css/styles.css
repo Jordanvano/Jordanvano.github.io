@@ -29,3 +29,15 @@
   align-items: center;
   justify-content: center;
 }
+
+/* CSS for the bulb - My third Javascript*/
+
+
+.center1{
+    height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
