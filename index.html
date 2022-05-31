@@ -205,31 +205,6 @@
 
 </style>
 
-<!--DRAG AND DROP API-->
-<style>
-  #div1 {
-    width: 350px;
-    height: 70px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-  }
-  </style>
-  <script>
-  function allowDrop(ev) {
-    ev.preventDefault();
-  }
-  
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-  }
-  
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-  }
-  </script>
-
 <!--Drag the image back and forth between the two div elements.-->
 <style>
   #div1, #div2 {
@@ -934,17 +909,7 @@ src="https://www.youtube.com/embed/PT2_F-1esPk?list=RDRgKAFK5djSk" title="YouTub
 <br>
 <hr>
 <br>
-<!--DRAG AND DROP HTML-->
-  
-  <p>Drag the W3Schools image into the rectangle:</p>
-  
-  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-  <br>
-  <img id="drag1" src="Images/img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
-<br>
-<hr>
-<br>
-<h2>Drag and Drop</h2>
+<!--Drag the image back and forth between the two div elements.-->
 <p>Drag the image back and forth between the two div elements.</p>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -953,7 +918,9 @@ src="https://www.youtube.com/embed/PT2_F-1esPk?list=RDRgKAFK5djSk" title="YouTub
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 <br>
-<hr>
+<br>
+<br>
+<br>
 <br>
 
 </body>
