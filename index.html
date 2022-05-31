@@ -389,11 +389,41 @@
    <input type="reset">
   </fieldset>
  </form>
+<br><br>
 
- <video width="320" height="240" controls>
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+ <video id="video1" width="320" height="240" controls>
   <source src="Videos/multimedia05_preview.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+  </video>
+</div>
+<script> 
+  var myVideo = document.getElementById("video1"); 
+  
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+  
+  function makeBig() { 
+      myVideo.width = 560; 
+  } 
+  
+  function makeSmall() { 
+      myVideo.width = 320; 
+  } 
+  
+  function makeNormal() { 
+      myVideo.width = 420; 
+  } 
+  </script> 
 
 <h4>Display a Search Field</h4>
 <!--<form id="form" role="search">
@@ -826,6 +856,28 @@ footer {
   <small>Format: 123-45-678</small><br><br>
   <input type="submit" value="Submit">
 </form>
+<hr>
+<br>
+<!--A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.-->
+<br>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+  Your browser does not support the HTML canvas tag.
+  </canvas>
+<hr>
+<br>
+<!--SVG defines vector-based graphics in XML format.-->
+<br>
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+<br>
+<hr>
+<br>
+
+<iframe width="420" height="345" 
+src="https://www.youtube.com/embed/RDRgKAFK5djSk">
+</iframe>
 
 </body>
 </html>
