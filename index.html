@@ -216,23 +216,6 @@
     border: 1px solid black;
   }
   </style>
-  <script>
-  function allowDrop(ev) {
-    ev.preventDefault();
-  }
-  
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-  }
-  
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-  }
-  </script>
-
-
 
 </head>
 <body>
@@ -431,28 +414,6 @@
   Your browser does not support the video tag.
   </video>
 </div>
-<script> 
-  var myVideo = document.getElementById("video1"); 
-  
-  function playPause() { 
-    if (myVideo.paused) 
-      myVideo.play(); 
-    else 
-      myVideo.pause(); 
-  } 
-  
-  function makeBig() { 
-      myVideo.width = 560; 
-  } 
-  
-  function makeSmall() { 
-      myVideo.width = 320; 
-  } 
-  
-  function makeNormal() { 
-      myVideo.width = 420; 
-  } 
-  </script> 
 
 <h4>Display a Search Field</h4>
 <!--<form id="form" role="search">
@@ -470,22 +431,6 @@
                   </button>
                 </form>
 
-
-                <!--What is in between the script elements is JAVA-->
-                <script>
-                const f = document.getElementById('form');
-                const q = document.getElementById('query');
-                const google = 'https://www.google.com/search?q=';
-
-                function submitted(event) {
-                  event.preventDefault();
-                  const url = google + '+' + q.value;
-                  const win = window.open(url, '_blank');
-                  win.focus();
-                }
-
-                f.addEventListener('submit', submitted);
-                </script>
 </div>
 <br>
 <br>
@@ -537,28 +482,17 @@ server called "action_page.php".</p>
 <br>
 <br>
 
-<p>Use of The class Attribute in JavaScript</p>
-<p>Click the button to hide all elements with class name "city":</p>
+<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
 
-<button onclick="myFunction()">Hide elements</button>
+<button onclick="myFunction()">Try it</button>
 
-<h2 class="city">London</h2>
-<p>London is the capital of England.</p>
+<div id="myDIV">
+This is my DIV element.
+</div>
 
-<h2 class="city">Paris</h2>
-<p>Paris is the capital of France.</p>
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p> 
 
-<h2 class="city">Tokyo</h2>
-<p>Tokyo is the capital of Japan.</p>
-
-<script>
-function myFunction() {
-  var x = document.getElementsByClassName("city");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-}
-</script>
+<br>
 
 <h2>Using The id Attribute in JavaScript</h2>
 <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
@@ -917,11 +851,35 @@ src="https://www.youtube.com/embed/PT2_F-1esPk?list=RDRgKAFK5djSk" title="YouTub
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<script src="js/myScript.js"></script>
+
 <br>
 <br>
 <br>
 <br>
 <br>
+<hr>
+<br>
+
+<!--HTML Web Storage HTML-->
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+<br>
+<br>
+<hr>
+<br>
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button> 
+<button onclick="stopWorker()">Stop Worker</button>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+<script src="myScript.js"></script>
+<br>
+<br>
+
 
 </body>
 </html>
