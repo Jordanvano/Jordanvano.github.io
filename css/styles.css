@@ -1,3 +1,53 @@
+
+/*CSS for colours, alignment and paragraph>*/
+
+body {background-color: grey;}
+h1 {text-align: center;}
+p {text-align: center;
+  color: black;
+  font-family: verdana;
+  font-size: 120%;
+  }
+bdo {border: 2px solid powderblue;}
+.p2 {padding: 30px}
+.p3 {margin: 50px;}
+
+
+/*CSS for Links>*/
+
+        a:link {
+          color: blue;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:visited {
+          color: blue;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        a:hover {
+          color: none;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:active {
+          color: purple;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+
+        /*<styl>
+          body {
+            background-image: url('Images/Mountains.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+          }
+          </style>*/
+
+
+
+
 /* CSS for my logo image and the leopard image and the desktop computer*/
 
 .warning {
@@ -30,6 +80,140 @@
   justify-content: center;
 }
 
+
+/*CSS for table>*/
+
+  .p4 table {
+    font-family: arial, sans-serif;
+    border:4px solid black;
+    border-radius: 10px;
+    border-style: dotted;
+    border-spacing: 10px;
+    width: 100%;
+  }
+  
+  .p4 td, th {
+    border: 4px solid #000000;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+
+  .p4 tr:nth-child(even){
+    background-color: #dddddd;
+  }
+  .p4 th:nth-child(odd) {
+    background-color: blue;
+  }
+  .p4 td:nth-child(3) {
+    background-color: red;
+  }
+  .p4 tr:nth-child(odd){
+    background-color: green;
+  }
+
+  .p4 tr:hover {background-color: #ffea00;}
+
+
+  /*CSS for Horizontal List to create a navigation menu*/
+  
+  .p5 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    background-color: #307485;
+  }
+  
+  .p5 li {
+    float: left;
+  }
+  
+  .p5 li a {
+    display: block;
+    color: rgb(0, 145, 255);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .p5 li a:hover {
+    background-color: #111111;
+  }
+  
+  .p5 li a:link {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+  }
+  
+  .p5 li a:visited {
+            color: blue;
+            background-color: transparent;
+            text-decoration: none;
+  }
+  .p5 li a:hover {
+            color: none;
+            background-color: transparent;
+            text-decoration: underline;
+   }
+  .p5 li a:active {
+            color: purple;
+            background-color: transparent;
+            text-decoration: underline;
+   }
+
+   /*CSS for the google search bar*/
+
+   /*
+   <styl>
+     body {
+     background-color: #3745c2;
+     margin: 200px 40%;
+   }
+   */
+   .p6 form {
+     background-color: #4654e1;
+     width: 300px;
+     height: 44px;
+     border-radius: 5px;
+     display:flex;
+     flex-direction:row;
+     align-items:center;
+   }
+   
+   .p6 input {
+     all: unset;
+     font: 16px system-ui;
+     color: #fff;
+     height: 100%;
+     width: 100%;
+     padding: 6px 10px;
+   }
+   
+   .p6 ::placeholder {
+     color: #fff;
+     opacity: 0.7; 
+   }
+   
+   .p6 svg {
+     color: #fff;
+     fill: currentColor;
+     width: 24px;
+     height: 24px;
+     padding: 10px;
+   }
+   
+   .p6 button {
+     all: unset;
+     cursor: pointer;
+     width: 44px;
+     height: 44px;
+   }
+   
+
 /* CSS for for "Try it" button to toggle between hiding and showing the DIV element*/
 
 #myDIV {
@@ -54,5 +238,13 @@
 }
 
 
-
+/*Drag the image back and forth between the two div elements.*/
+  #div1, #div2 {
+    float: left;
+    width: 112px;
+    height: 55px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+  }
 
