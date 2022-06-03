@@ -55,6 +55,14 @@ function displayResult() {
 }
 
 
+/* JS for changing the text without colour to red and highlighted in yellow*/
+
+function myFunction() {
+  document.getElementById("demo 1").style.fontSize = "25px"; 
+  document.getElementById("demo 1").style.color = "red";
+  document.getElementById("demo 1").style.backgroundColor = "yellow";        
+}
+
 
 /*JS for switching the light ON or OFF*/
 
