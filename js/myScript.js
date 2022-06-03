@@ -1,34 +1,3 @@
-/* JS for Drag the image back and forth between the two div elements. */
-
-  function allowDrop(ev) {
-    ev.preventDefault();
-  }
-
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-  }
-  
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-  }
-
-
-/* JS for HTML Web Storage */
-
-  function clickCounter() {
-    if (typeof(Storage) !== "undefined") {
-      if (localStorage.clickcount) {
-        localStorage.clickcount = Number(localStorage.clickcount)+1;
-      } else {
-        localStorage.clickcount = 1;
-      }
-      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-    } else {
-      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-  }
 
 /* JS for the video with Play/Pause, big, small ,normal buttons */
 
@@ -78,3 +47,61 @@ function myFunction() {
     x.style.display = "none";
   }
 }
+
+/* JS for changing the text from "Hello World!" to "Have a nice day!"*/
+
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+
+
+
+/*JS for switching the light ON or OFF*/
+
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "Images/pic_bulboff.gif"
+  } else {
+    pic = "Images/pic_bulbon.gif"
+  }
+  document.getElementById('myImage').src = pic;
+}
+
+
+/* JS for Drag the image back and forth between the two div elements. */
+
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+  }
+
+
+/* JS for HTML Web Storage */
+
+  function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
+
+
+
+
+

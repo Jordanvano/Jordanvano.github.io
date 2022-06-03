@@ -179,7 +179,7 @@
     <br>
     <hr>
     <br>
-    
+
    <p style="background-image: url('Images/Mountains.jpg'); 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -426,12 +426,6 @@ This is my DIV element.
 <h1 id="myHeader">Hello World!</h1>
 <button onclick="displayResult()">Change text</button>
 
-<script>
-function displayResult() {
-  document.getElementById("myHeader").innerHTML = "Have a nice day!";
-}
-</script>
-
 <br>
 <hr>
 <br>
@@ -476,9 +470,9 @@ Click me to display Date and Time.</button>
 
 <script>
 function myFunction() {
-  document.getElementById("demo 1").style.fontSize = "25px"; 
-  document.getElementById("demo 1").style.color = "red";
-  document.getElementById("demo 1").style.backgroundColor = "yellow";        
+  document.getElementById('demo 1').style.fontSize = '25px'; 
+  document.getElementById('demo 1').style.color = 'red';
+  document.getElementById('demo 1').style.backgroundColor = 'yellow';        
 }
 </script>
 
@@ -490,18 +484,6 @@ function myFunction() {
 
 <h1>My Third JavaScript</h1>
 <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<script>
-function light(sw) {
-  var pic;
-  if (sw == 0) {
-    pic = "Images/pic_bulboff.gif"
-  } else {
-    pic = "Images/pic_bulbon.gif"
-  }
-  document.getElementById('myImage').src = pic;
-}
-</script>
 
 <img id="myImage" src="Images/pic_bulboff.gif" style="max-width:100%;height:auto;" class="center1">
 
