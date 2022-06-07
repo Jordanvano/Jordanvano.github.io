@@ -214,7 +214,7 @@ bdo {border: 2px solid powderblue;}
    }
    
 
-/* CSS for for "Try it" button to toggle between hiding and showing the DIV element*/
+/* CSS for for "Try it" button to toggle between hiding and showing the DIV element
 
 #myDIV {
   width: 100%;
@@ -222,8 +222,7 @@ bdo {border: 2px solid powderblue;}
   text-align: center;
   background-color: lightblue;
   margin-top: 20px;
-}
-
+}*/
 
 /* CSS for the bulb - My third Javascript*/
 

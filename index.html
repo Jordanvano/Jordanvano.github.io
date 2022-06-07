@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jordan Van ooteghem">
     <title>Jordan</title>
+
+    <style>
+      #myDIV {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 20px;
+      }
+      </style>
 
 <!--CSS for small icon next to website name><-->
 
@@ -414,7 +424,18 @@ server called "action_page.php".</p>
 This is my DIV element.
 </div>
 
-<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p> 
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 
 <br>
 <hr>
