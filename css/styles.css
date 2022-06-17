@@ -361,7 +361,18 @@ footer {
   }
 
 
+/*Make images transparent*/
+
+div.clearfix img {
+  opacity: 0.5;
+}
+
+div.clearfix img:hover {
+  opacity: 1.0;
+}
+
 /*Float images side by side*/
+
 * {
   box-sizing: border-box;
 }
@@ -390,3 +401,33 @@ div:hover p1 {
   display: block;
 }
 
+
+/*Full-height vertical navbar*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position:absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
