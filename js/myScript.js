@@ -41,25 +41,20 @@
 
 /*function myFunction() {
   var x = document.getElementById("myDIV");
-  if (x.style.display==="none"){
-    x.style.display="block";
-  }else{
-    x.style.display ="none";
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
 }*/
 
-var count=0;
-
-function myFunction(){
-count++;
-var x=document.getElementById("myDIV");
-if (count=1){
-x.style.display="block";
-}
-else{
-x.style.display="none";
-count=0;
-}
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 
 
