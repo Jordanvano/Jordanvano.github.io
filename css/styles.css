@@ -221,6 +221,7 @@ bdo {border: 2px solid powderblue;}
   text-align: center;
   background-color: lightblue;
   margin-top: 20px;
+  border-radius: 25px;
 }
 
 /* CSS for the bulb - My third Javascript*/
