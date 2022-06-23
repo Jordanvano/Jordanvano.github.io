@@ -221,7 +221,7 @@ bdo {border: 2px solid powderblue;}
   text-align: center;
   background-color: lightblue;
   margin-top: 20px;
-  display:none;
+  display: none;
   border-radius: 25px;
 }
 
@@ -713,3 +713,11 @@ body {
   }
 }
 
+/* Multiple Backgrounds */
+#example1 {
+  background-image: url(Images/img_logo.gif), url(Images/img_w3slogo.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+/* problem with the already grey colour background??*/
