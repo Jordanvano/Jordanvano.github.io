@@ -1,7 +1,7 @@
 
 /*CSS for colours, alignment and paragraph>*/
 
-body {background: #f1f1f1;}
+/*body {background: #f1f1f1;}*/
 h1 {text-align: center;}
 p {text-align: center;
   color: black;
@@ -715,9 +715,45 @@ body {
 
 /* Multiple Backgrounds */
 #example1 {
-  background-image: url(Images/img_logo.gif), url(Images/img_w3slogo.gif);
-  background-position: right bottom, left top;
-  background-repeat: no-repeat, repeat;
+  background-image: url(/Users/jordan/Testing/Jordanvano.github.io/Images/img_w3slogo.gif), url(/Users/jordan/Testing/Jordanvano.github.io/Images/unnamed.jpg);
+  background-position: right bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 250px, 100%;
   padding: 15px;
 }
-/* problem with the already grey colour background??*/
+
+/* Full page background image the background image stays fixed all the time, pretty cool, but all writings need to be adjusted in this case due to the bacground image
+
+html { 
+  background: url(/Users/jordan/Testing/Jordanvano.github.io/Images/pexels-pixabay-15239.jpg) no-repeat center fixed; 
+  background-size: cover;
+}*/
+
+/*Linear, radial, conic gradient*/
+
+#grad1 {
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#grad2 {
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+#grad3 {
+  height: 200px;
+  width: 200px;
+  background-image: conic-gradient(red, yellow, green, blue, black);
+  border-radius: 50%;
+  float: left;
+  margin-left: 300px
+}
+
+#grad4 {
+  height: 200px;
+  width: 200px;
+  background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  border-radius: 50%;
+  float: right;
+  margin-right: 300px
+}
+
