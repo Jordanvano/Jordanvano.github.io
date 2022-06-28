@@ -383,6 +383,7 @@ div.clearfix img:hover {
   float: left;
   width: 33.33%;
   padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .clearfix::after {
@@ -757,3 +758,33 @@ html {
   margin-right: 300px
 }
 
+/* Text shadow effect */
+
+#shadow {
+  font-size: 150%;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* The word-wrap property */
+
+p.test {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+
+/* Transition + transform */
+
+#transition {
+  margin-left: 50%;
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+#transition:hover {
+  width: 100px;
+  height: 100px;
+  transform: rotate(360deg);
+}
