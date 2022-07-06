@@ -143,7 +143,7 @@ function stopWorker() {
   w = undefined;
 }
 
-/* JS for Creating a modal image */
+/* Create a modal image*/
 
 // Get the modal
 var modal = document.getElementById('myModal');
