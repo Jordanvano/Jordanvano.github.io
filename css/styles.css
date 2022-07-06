@@ -716,7 +716,7 @@ body {
 
 /* Multiple Backgrounds */
 #example1 {
-  background-image: url(/Users/jordan/Testing/Jordanvano.github.io/Images/img_w3slogo.gif), url(/Users/jordan/Testing/Jordanvano.github.io/Images/unnamed.jpg);
+  background-image: url(/Users/jordan/Testing/Jordanvano.github.io/Images/img_w3slogo.gif) , url(/Users/jordan/Testing/Jordanvano.github.io/Images/unnamed.jpg);
   background-position: right bottom, center;
   background-repeat: no-repeat, no-repeat;
   background-size: 250px, 100%;
@@ -978,3 +978,23 @@ p.test {
     width: 100%;
   }
 }
+
+
+/*Use a linear gradient as the mask layer*/
+
+p {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+.mask1 {
+  max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(/Users/jordan/Testing/Jordanvano.github.io/Images/pexels-toronto.jpg) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+
+/*NEXT TIME FIX THE SIZE OF THE TORONTO BACKGROUND IMAGE IN THE CONTAINER ABOVE*/
+
