@@ -1068,4 +1068,79 @@ p.layer {
   transition: 0s
 }
 
-/* */
+/* Pagination - Transition effect on hover */
+
+.center2 {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* Using the column-span property */
+
+.newspaper {
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 1px solid lightblue;
+}
+
+h2 {
+  column-span: all;
+}
+
+/* Allow resize both height and width */
+
+.resize {
+  border: 2px solid;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+
+/* Get and change variable with JavaScript */
+
+.variable :root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+.variable body {
+  background-color: var(--blue);
+}
+
+.variable h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.variable .container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+}
+
+.variable .container button  {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px;
+}
+
+

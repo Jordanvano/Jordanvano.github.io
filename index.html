@@ -1202,5 +1202,102 @@ span.onclick = function() {
 <br>
 <br>
 
+<!-- Pagination - Transition effect on hover -->
+
+<p>Move the mouse over the numbers.</p>
+
+<div class="center2">
+  <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<!-- sing the column-span property -->
+
+<div class="newspaper">
+  <h2>Lorem Ipsum Dolor Sit Amet</h2>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+  </div>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+  <!-- Allow resize both height and width -->
+
+  <div class="resize">
+    <p>Let the user resize both the height and the width of this div element.</p>
+    <p>To resize: Click and drag the bottom right corner of this div element.</p>
+  </div>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+  <br>
+
+   <!-- Get and change variable with JavaScript -->
+
+   <h1>Get and Change CSS Variable With JavaScript</h1>
+
+  <div class="variable">
+   <div class="container">
+     <h2>Lorem Ipsum</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+     <p>
+       <button>Yes</button>
+       <button>No</button>
+     </p>
+   </div>
+  </div>
+   <br>
+   
+   <button type="button" onclick="myFunction_get()">Get CSS Variable with JavaScript</button>
+   <button type="button" onclick="myFunction_set()">Change CSS Variable with JavaScript</button>
+
+   <script>
+    // Get the root element
+    var r = document.querySelector(':root');
+    
+    // Create a function for getting a variable value
+    function myFunction_get() {
+      // Get the styles (properties and values) for the root
+      var rs = getComputedStyle(r);
+      // Alert the value of the --blue variable
+      alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
+    }
+    
+    // Create a function for setting a variable value
+    function myFunction_set() {
+      // Set the value of variable --blue to another value (in this case "lightblue")
+      r.style.setProperty('--blue', 'lightblue');
+    }
+    </script>
+
+<!-- KEEP ON TRYING TO FIGURE OUT HOW TO APPLY JS AND CSS TO ONLY THE LAST MARKUP-->
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
 </body>
 </html>
