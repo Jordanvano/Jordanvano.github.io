@@ -1117,30 +1117,38 @@ h2 {
 
 /* Get and change variable with JavaScript */
 
-.variable :root {
+:root {
   --blue: #1e90ff;
   --white: #ffffff; 
 }
 
-.variable body {
+#main {
   background-color: var(--blue);
 }
-
-.variable h2 {
+/*
+.h2 {
   border-bottom: 2px solid var(--blue);
-}
+}*/
 
-.variable .container {
+.container {
   color: var(--blue);
   background-color: var(--white);
   padding: 15px;
+  margin: 10px;
 }
 
-.variable .container button  {
+.container button  {
   background-color: var(--white);
   color: var(--blue);
   border: 1px solid var(--blue);
   padding: 5px;
 }
+
+#button1 {
+  margin-left: 15px;
+}
+
+.hide {display: none;}
+
 
 
