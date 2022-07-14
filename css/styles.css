@@ -2,7 +2,7 @@
 /*CSS for colours, alignment and paragraph>*/
 
 /*body {background: #f1f1f1;}*/
-h1 {text-align: center;}
+/* h1 {text-align: center;}
 p {text-align: center;
   color: black;
   font-family: verdana;
@@ -11,7 +11,7 @@ p {text-align: center;
 bdo {border: 2px solid powderblue;}
 .p2 {padding: 30px}
 .p3 {margin: 50px;}
-
+*/
 /*CSS for Links>*/
 
         a:link {
@@ -349,9 +349,6 @@ footer {
       }
     }
 
-
-
-
 /*Drag the image back and forth between the two div elements.*/
   #div1, #div2 {
     float: left;
@@ -437,7 +434,6 @@ li1 a:hover:not(.active) {
 }
 
 /*A sticky horizontal navbar*/
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -448,7 +444,6 @@ ul {
   position: relative;
   top: 0;
 }
-
 li {
   float: left;
 }
