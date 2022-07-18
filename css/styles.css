@@ -987,7 +987,7 @@ p.layer {
   max-width: 600px;
   height: 350px;
   overflow-y: scroll;
-  background: url(/Users/jordan/Testing/Jordanvano.github.io/Images/pexels-toronto.jpg) no-repeat; 
+  background: url(/Images/pexels-toronto.jpg) no-repeat; 
   background-size: 600px 350px;
   -webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient (black, transparent);
