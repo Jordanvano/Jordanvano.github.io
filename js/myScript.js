@@ -37,7 +37,7 @@
 
   f.addEventListener('submit', submitted);
 
-/*JS for "Try it" button to toggle between hiding and showing the DIV element*/
+/*JS for "Try it" button to toggle between hiding and showing the DIV element
 
 function myFunction() {
   var x = document.getElementById("myDIV");
@@ -47,6 +47,7 @@ function myFunction() {
     x.style.display = "none";
   }
 }
+(INSERTED THIS JAVASCRPIT IN THE BODY ON THE HTML*/
 
 /*
 function myFunction() {
